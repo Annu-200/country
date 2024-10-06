@@ -1,0 +1,101 @@
+body {
+    --background-color : white;
+    --element-color:white;
+    --text-color:black;
+    font-family: Nunito, sans-serif;
+    margin: 0;
+    /* background-color:  hsl(207, 26%, 17%); */
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+ body.dark{
+    --background-color: hsl(207, 26%, 17%);
+    --element-color:hsl(209, 23%, 22%);
+    --text-color: hsl(0, 0%, 100%);
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+
+
+.back-btn{
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    background-color: var(--element-color);
+}
+main{
+    margin-top :20px;
+    padding-inline: 24px 30px;
+}
+.main-container-country-details{
+    max-width: 1200px ;
+    margin-inline: auto;
+}
+a{
+    color:  inherit;
+    text-decoration: none;
+}
+.country-details {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around;    */
+   gap: 40px;
+}
+.country-details img{
+  width: 40%;
+border:  1px solid #9999;
+
+}
+.details-text{
+   display: flex;
+   flex-wrap: wrap;
+   row-gap:12px;
+   column-gap: 60px;
+   flex-direction: column;
+   max-height: 150px;
+   
+}
+.details-text p{
+    margin: 0;
+}
+.border-country{
+    margin-top: 50px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.border-country a{
+    text-decoration: none;
+    color: inherit;
+     padding: 10px 24px;
+     box-shadow: 0px 0px  4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-inline: 10px;
+   background-color: var(--element-color);
+}
+@media (max-width: 800px) {
+    .details-text{
+        display:block;
+        margin: 10px;
+        max-height: unset;
+    }
+    .details-text p{
+        font-size: 16px;
+        margin: 16px;
+    }
+    .country-details{
+        flex-direction: column;
+    align-items: flex-start;
+   gap: 25px;
+    }
+    .country-details img{
+        width: 100%;
+        max-width: 500px;
+    }   
+    .detail-text-container{
+        text-align: left;
+    }  
+}

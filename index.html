@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch About countres</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header-container">
+        <header>
+            <h2 class="title"><a href="/">Where in the world?</a></h2>
+           <p class="theme-change"><i class="fa-regular fa-moon"></i> &nbsp; Dark mode</p>
+        </header>
+    </div>
+ <main>
+    <div class="search-container">
+        <div class="search-filter-container">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search for a Country...">
+        </div>
+        <div class="filter-country">
+            <select name="country" id="filter-by-relgion">
+                <option >Filter By Religon</option>
+                <option value="Africa">Africa</option>
+                <option value="America">America</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+        </div>
+    </div>
+    <div class="country-container">
+
+        <a href="#" class="country-card ">
+          
+            <img class="skeleton" src="https://flagcdn.com/af.svg" alt=flag>
+           
+           <div class="card-details">
+        <div class="card-title">
+            <h3>Afghanistan</h3>
+        </div>
+            <p><b>Population</b>:28875</p>
+            <p><b>Region</b>:Asia</p>
+            <p><b>Capition</b>:Kabul</p>
+           </div>
+        </a>
+      
+    </div>
+ </main>
+</body>
+<script src="script.js"></script>
+</html>
